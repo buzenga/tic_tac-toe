@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Smokum', cursive;
+}
+
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #e4e6f5;
+  border: 2px solid black;
+  border-radius: .4em;
+  width: 80px;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+  font-family: 'Smokum', cursive;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #3be724;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(img/pitch.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  position: absolute;
+  text-align: center;
+  top: 1rem;
+  font-family: 'Bangers', cursive;
+  text-shadow: -1px 1px 0 white, 1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+}
+
+.starter {
+  position: absolute;
+  z-index: 1;
+  padding: 1em;
+  border-radius: .5em;
+  width: 40%;
+  gap: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.637);
+}
+
+.starter button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.result_messi {
+  position: absolute;
+  z-index: 1;
+  padding: 1em;
+  border-radius: .5em;
+  background-color: rgba(255, 255, 255, 0.637);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.result_messi .img {
+  content: url(img/argentina.png);
+  width: 150px;
+  height: auto;
+}
+
+.result_ronaldo {
+  position: absolute;
+  z-index: 1;
+  padding: 1em;
+  border-radius: .5em;
+  background-color: rgba(255, 255, 255, 0.637);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.result_ronaldo .img {
+  content: url(img/portugal.png);
+  width: 150px;
+  height: auto;
+}
+
+.result_draw {
+  position: absolute;
+  z-index: 1;
+  padding: 1em;
+  border-radius: .5em;
+  background-color: rgba(255, 255, 255, 0.637);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.result_draw .img {
+  content: url(img/giani.png);
+  width: 150px;
+  height: auto;
+}
+
+.gameboard {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.637);
+  border-radius: .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 212px;
+}
+
+.gameboard .game_nav {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  bottom: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.gameboard .game_nav .current_player_messi {
+  content: url(img/messi.png);
+  width: 60px;
+  height: auto;
+  border-radius: 30px;
+}
+
+.gameboard .game_nav .current_player_ronaldo {
+  content: url(img/ronaldo.png);
+  width: 60px;
+  height: auto;
+  border-radius: 30px;
+}
+
+.gameboard .field {
+  padding: 0;
+  margin: 0;
+  border: 3px solid black;
+  width: 70px;
+  height: 70px;
+}
+
+.gameboard .hover_on:hover {
+  content: url(img/ball.png);
+  cursor: pointer;
+}
+
+.gameboard .one {
+  border-top: none;
+  border-left: none;
+}
+
+.gameboard .two {
+  border-top: none;
+}
+
+.gameboard .three {
+  border-top: none;
+  border-right: none;
+}
+
+.gameboard .four {
+  border-left: none;
+}
+
+.gameboard .six {
+  border-right: none;
+}
+
+.gameboard .seven {
+  border-left: none;
+  border-bottom: none;
+}
+
+.gameboard .eight {
+  border-bottom: none;
+}
+
+.gameboard .nine {
+  border-bottom: none;
+  border-right: none;
+}
+
+.currently_playing {
+  border: 2px solid rgba(255, 217, 0, 0.925);
+  -webkit-box-shadow: 0 0 1rem rgba(255, 217, 0, 0.925);
+          box-shadow: 0 0 1rem rgba(255, 217, 0, 0.925);
+}
+/*# sourceMappingURL=main.css.map */

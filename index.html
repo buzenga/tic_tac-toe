@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Circle and Cross App</title>
+
+   <link rel="stylesheet" href="main.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Smokum&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <div class="wrapper">
+      <h1 class="header">Ballon d'or</h1>
+      
+      <div class="starter">
+         <p>You need two players to play this game. It's a new version of tic-tac-toe. Change between players after each pick. The one in golden frame will choose next</p>
+         <button>Start</button>
+      </div>
+      <div class="result_messi">
+         <h2 class="announcement">The trophy goes to Argentina</h2>
+         <div class="img"></div>
+         <button class="restart messiBtn">Reload the game</button>
+      </div>
+      <div class="result_ronaldo">
+         <h2 class="announcement">The trophy goes to Portugal</h2>
+         <div class="img"></div>
+         <button class="restart ronaldoBtn">Reload the game</button>
+      </div>
+      <div class="result_draw">
+         <h2 class="announcement">It's a draw. Trophy goes to Messi</h2>
+         <div class="img"></div>
+         <button class="restart ronaldoBtn">Reload the game</button>
+      </div>
+      <div class="gameboard">
+
+         <div class="game_nav">
+            <div class="current_player_messi currently_playing "></div>
+            <div class="current_player_ronaldo"></div>
+         </div>
+
+         <div class="field one"></div>
+         <div class="field two"></div>
+         <div class="field three"></div>
+         <div class="field four"></div>
+         <div class="field five"></div>
+         <div class="field six"></div>
+         <div class="field seven"></div>
+         <div class="field eight"></div>
+         <div class="field nine"></div>
+      </div>
+   </div>
+
+   <script src="app.js"></script>
+</body>
+</html>
